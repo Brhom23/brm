@@ -1,0 +1,526 @@
+* {
+    box-sizing: border-box;
+}
+
+.container {
+/* هادي المقاسات عشان لا يخرب التصميم لمن تصغر*/
+    width: 1170px;
+    margin: auto;
+}
+
+.clearfix {
+/* كلاس يستخدم لمن بدي الغي الفلوت بعملها بعد اي اثنين فلوت بعملهم*/
+    clear: both;
+}
+/*  START HEADER */
+.header .Slider {
+/* هيك خليت الباك قراوند مالها دخل في الكلام واستخدمت css3 في هالنقطة*/
+    -webkit-background-image: url('../images/slider.jpg');
+    -moz-background-image: url('../images/slider.jpg');
+    -o-background-image: url('../images/slider.jpg');
+    background-image: url('../images/slider.jpg');
+    background-size: cover;
+    height: 600px;
+}
+
+.header .Slider .intro {
+    padding-top: 200px;
+    height: 600px;
+    text-align: center;
+}
+
+.header .Slider .intro h2 {
+    margin: 0 auto;
+    font-size: 50px;
+    width: 705px;
+/* حطيت ويدث عشان لمن احط بوردير يكون للكلام بس*/
+    border-top: 4px solid #0e0e0e;
+    border-bottom: 4px solid #0e0e0e;
+    padding: 5px 0;
+}
+
+.header .Slider .intro button {
+    background: none;
+ /* عشان يكون الزر شفاف*/
+    margin-top: 30px;
+/* عشان تبع عن الهيدر شوي*/
+    font-size: 20px;
+    border: 3px solid #0e0e0e;
+    font-weight: bold;
+    padding: 10px 30px;
+/*10 لفوق وتحت و 30 لليمين واليسار */
+}
+
+.header .navbar {
+    background-color: #0e0e0e;
+    color: #FFF;
+    overflow: hidden;
+/*  عشان يظهر اللون تبع النافبار */
+}
+
+.header .navbar h2 {
+    float: left;
+/*عشان تيجي على اليسار */
+    text-transform: uppercase;
+}
+
+.header .navbar h2 span {
+    color: #2ecc71
+}
+
+.header .navbar ul {
+    list-style: none;
+    padding-left: 0;
+    overflow: hidden;
+    float: right;
+/* عشان تيجي على اليمين */
+}
+
+.header .navbar li {
+    float: left;
+/*  عشان يجوا جنب بعض في اللسته مش فوق بعض */
+    padding: 10px;
+}
+
+.header .navbar li a {
+    color: #FFF;
+    text-decoration: none;
+/* عشان ما يجي خط  تحت الكلام */
+}
+
+.header .navbar li a:hover {
+    color: #2ecc71;
+}
+/*  END HEADER */
+/* start Features */
+.Features {
+    overflow: hidden;
+    padding-top: 40px;
+    padding-bottom: 40px;
+/* عشان ما تطلع العماصر برا*/
+}
+
+.Features .feat {
+    float: left;
+    width: 33.33333%;
+/* هادي هي النبة الي بتخلي الثلاث ديفات تيجي في النص كل وحده لحالها */
+    height: 150px;
+/* للتنسيق فقط*/
+}
+
+.Features .feat h2 {
+    text-transform: uppercase;
+    color: #555;
+}
+
+.Features .feat p {
+    line-height: 1.7;
+    margin-right: 10px;
+    color: #888;
+   /* text-align: justify;
+ بتعبي الودث*/
+}
+/* end Features */
+/* start about me */
+
+.aboutMe {
+    background-color: #f2f2f2;
+    overflow: hidden;
+/*هادي الي حتظهر اللون */
+}
+
+.aboutMe .image {
+    float: left;
+    width: 40%;
+}
+
+.aboutMe .image > img {
+/* عشان الصورة تاخد كل المنطقه*/
+    width: 100%;
+    height: 515px;
+}
+
+.aboutMe .info {
+    float: left;
+    width: 60%;
+}
+
+.aboutMe .info h2 {
+    text-transform: uppercase;
+    margin: 30px 0 22px 40px;
+    color: #555;
+}
+/* هو والي قبله اشتركوا بالمارجن تبع اليمين عشان يطلعوا تحت بعض بالزبط*/
+.aboutMe .info > p {
+    margin: 0 0 20px 40px;
+}
+
+.aboutMe .info > p :last-of-type {
+    margin-top: 30px;
+}
+
+.aboutMe .info p {
+    line-height: 1.6;
+    /* ليست بالبكسل*/
+    color: #666;
+}
+
+.aboutMe  .info  .hobbies {
+    overflow: hidden;
+    margin: 20px 0 0 40px;
+}
+
+.aboutMe .info .hobbies .content {
+    float: left;
+    width: 50%;
+    min-height: 100px;
+    overflow: hidden;
+}
+
+.aboutMe  .info  .hobbies .content h3 {
+    color: #555;
+}
+
+.aboutMe  .info  .hobbies .content .icon {
+    max-width: 100%;
+    margin: 26px 10px 0 0;
+    color: #2ECB6B;
+    float: left;
+    width: 12%;
+    margin-right: 5%
+}
+/* مجموع الويدث تبع التكست والايكون 100%*/
+/* البادينق كمان حيزبط لمن احط بوكس سايزينق*/
+
+
+.aboutMe  .info  .hobbies .content .text {
+    float: left;
+    width: 83%;
+}
+
+/* end about me */
+/*start my skills*/
+.mySkills {
+    padding-top: 30px;
+    padding-bottom: 50px;
+    overflow: hidden;
+}
+
+.mySkills .skills , .mySkills .progress {
+    width: 50%;
+    float: left;
+}
+
+.mySkills .skills h2 {
+    text-transform: uppercase;
+    margin: 25px 0 20px 40px;
+    color: #555;
+}
+/* هو والي قبله اشتركوا بالمارجن تبع اليمين عشان يطلعوا تحت بعض بالزبط*/
+
+.mySkills .skills > p :last-of-type {
+    margin-top: 25px;
+}
+
+.mySkills .skills p {
+    line-height: 1.6;
+    /* ليست بالبكسل*/
+    color: #666;
+    margin: 0 0 10px 40px;
+}
+
+.mySkills .skills button {
+    margin-top: 20px;
+    margin-left: 40px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+
+.mySkills .progress .technique {
+    margin-left: 50px;
+}
+
+.mySkills .progress .technique h3 {
+    color: #555;
+}
+
+.mySkills .progress .technique div {
+    background-color: #F2F2F2;
+    height: 30px;
+}
+
+.mySkills .progress .technique div span {
+    background-color: #2ECB6B;
+    display: block;
+/* عشان تظهر فوق الديف لازم تتعامل معاملة البلوك*/
+    height: 30px;
+    line-height: 25px;
+  /* عشان تظهر الكلمة في المنتصف اخذناها نفس الهايت*/
+    text-align: right;
+    color: #FFF;
+    font-weight: bold;
+}
+ /*end my skills*/
+ /* Start resume*/
+.resume {
+    background-color: #f2f2f2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.resume h2 {
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #555;
+}
+
+.resume button {
+    margin-top: 15px;
+}
+
+.resume p {
+    line-height: 1.7;
+    color: #666;
+    padding: 0 40px;
+}
+ /*end resume */
+
+ /*start my education and workexp*/
+.myEducation .main h2, .workExp .main h2 {
+    text-transform: uppercase;
+    margin: 25px 0 20px 40px;
+    color: #555;
+}
+/* هو والي قبله اشتركوا بالمارجن تبع اليمين عشان يطلعوا تحت بعض بالزبط*/
+.myEducation .main  > p :last-of-type ,.workExp .main> p :last-of-type {
+    margin-top: 25px;
+}
+
+.myEducation .main p ,.workExp .main p {
+    line-height: 1.6;
+    /* ليست بالبكسل*/
+    color: #666;
+    margin: 0 0 10px 40px;
+}
+
+.myEducation {
+    padding-top: 30px;
+    padding-bottom: 30px;
+    overflow: hidden;
+}
+
+.myEducation  .main,.workExp .main {
+    width: 50%;
+    margin-right: 5%;
+    float: left;
+}
+
+.myEducation .exp ,.workExp .exp {
+    width: 45%;
+    float: left;
+}
+
+.myEducation .exp h3,.workExp .exp h3 {
+/* عشان ماتكون في مستوا العنوان الي جنبها */
+    margin-top: 75px;
+    margin-bottom: 10px;
+    color: #555;
+}
+
+.myEducation .exp span,.workExp .exp span {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.myEducation .exp span:first-of-type , .workExp .exp span:first-of-type {
+    color: #999;
+}
+
+.myEducation .exp span:last-of-type , .workExp .exp span:last-of-type {
+    background-color: #2ECB6B;
+    color: #FFF;
+    display: inline-block;
+/* عشان ياخد خواص الاثنين*/
+    padding: 4px 10px;
+}
+
+.myEducation  hr ,.workExp  hr {
+ /* شعان حتى الخط الي في الايديوكيشن بين الورك اكسبيرينس تطبق عليه الاجراءات*/
+    margin: 20px 0;
+    background-color: #DDD;
+    height: 3px;
+    border: 0;
+}
+
+.myEducation .exp p ,.workExp .exp p {
+    line-height: 1.7;
+    color: #777;
+}
+
+/*end my education and workexp*/
+/*start my testmonios*/
+.testmonios {
+    background-color: #f2f2f2;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    text-align: center;
+}
+
+.testmonios q {
+    color: #888;
+    font: italic bold 18px/1.7 Arial, Tahoma;
+/* اختصار عن اني اكتب كل واحد لحاله*/
+}
+
+.testmonios h3 {
+    color: #666;
+    margin-bottom: 30px;
+}
+
+.testmonios ul {
+    list-style: none;
+    padding-left: 0;
+    text-align: center;
+}
+
+.testmonios ul li {
+    width: 15px;
+    height: 15px;
+    border: 2px solid #2ECB6B;
+    display: inline-block;
+    border-radius: 50%;
+}
+
+.testmonios ul li.active, .testmonios ul li:hover {
+    background-color: #2ECB6B;
+}
+ /*end my testmonios*/
+ /* start portfolio*/
+.portfolio {
+    padding-top: 50px;
+    padding-bottom: 70px;
+    text-align: center;
+}
+
+.portfolio h2 {
+    color: #666;
+}
+
+.portfolio p {
+    line-height: 1.7;
+    color: #888;
+    margin-bottom: 30px;
+}
+
+.portfolio  .our-work {
+    overflow: hidden;
+}
+
+.portfolio  .our-work > div /* هي الدفات الي داخل الاور ورك مباشرة*/ {
+    float: left;
+    width: 33.333333%;
+    margin-bottom: 10px;
+/* هادي الي حتخلي 3 جنب بعض */
+}
+
+.portfolio  .our-work > div img {
+    width: 92%;
+    margin: 10px;
+    padding: 3px;
+    background-color: #FFF;
+    box-shadow: 10px 10px  12px #ccc
+}
+ /* end portfolio*/
+ /* start contact-me*/
+.contactMe {
+    background-color: #252f31;
+    overflow: hidden;
+    padding-top: 50px;
+    padding-bottom: 70px;
+}
+
+.contactMe h2 {
+    color: #FFF;
+    margin-left: 40px;
+}
+
+.contactMe p ,.contactMe address {
+    color: #5A6060;
+    margin-left: 40px;
+    line-height: 1.7;
+}
+
+.contactMe p Strong {
+    color: D1D6DA;
+}
+/* مجموع مساحه المنطقة لازم في الاخير يكون 100*/
+.contactMe .info {
+    width: 50%;
+    float: left;
+    margin-right: 5%;
+}
+
+.contactMe .form {
+    width: 45%;
+    float: left;
+}
+
+.contactMe .form label {
+    display: block;
+    color: D1D6DA;
+    margin: 10px 0;
+}
+
+.contactMe .form input[type="text"] ,.contactMe .form textarea ,.contactMe .form input[type="email"] {
+    background-color: #4B5557;
+    color: D1D6DA;
+    padding: 10px;
+    border: 0;
+    width: 80%;
+    margin-bottom: 10px
+}
+
+.contactMe .form textarea {
+    height: 300px;
+}
+
+.contactMe .form input[type="submit"] {
+    display: block;
+    color: #FFF;
+    background-color: #191E22;
+    padding: 10px 20px;
+    border: 0;
+    margin-top: 10px;
+}
+ /* end contact-me */
+ /* start footer*/
+.footer {
+    background-color: #191E22;
+    color: #5A6060;
+    padding: 20px 0;
+    text-align: center;
+}
+
+.footer ul {
+    list-style: none;
+}
+
+.footer li {
+    display: inline;
+    margin: 0 10px;
+    text-align: center;
+}
+ /* end footer*/
+ /* Start my framework هادي معناها زي حعمل المكتبه الخاصة فيني */
+.myBottom {
+    background: none;
+    border: 3px solid #2ECB6B;
+    padding: 10px;
+    color: #2ECB6B;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+
+  /* End my framework */
